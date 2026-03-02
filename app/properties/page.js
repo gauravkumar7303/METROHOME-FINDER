@@ -249,11 +249,11 @@ export default function PropertiesPage() {
           </div>
         </div>
 
-        {/* <div className="absolute bottom-40 left-40 animate-pulse">
+        <div className="absolute bottom-50 right-60 animate-pulse">
           <div className="bg-blue-500/30 backdrop-blur-md rounded-full px-4 py-2">
             <span className="text-white font-semibold">🤝 Direct Owner Contact</span>
           </div>
-        </div> */}
+        </div>
         
         {/* Content */}
         <div className="relative z-10 container-custom h-full flex flex-col justify-center">
