@@ -1,0 +1,36 @@
+2026/02/13-21:04:37.643 700 Reusing MANIFEST C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\IndexedDB\https_turbovpn.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/13-21:04:37.645 700 Recovering log #430
+2026/02/13-21:04:37.648 700 Reusing old log C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\IndexedDB\https_turbovpn.com_0.indexeddb.leveldb/000430.log 
+2026/02/13-21:04:37.650 700 Delete type=2 #429
+2026/02/13-21:04:41.339 610 Level-0 table #435: started
+2026/02/13-21:04:41.347 610 Level-0 table #435: 3065 bytes OK
+2026/02/13-21:04:41.351 610 Delete type=0 #430
+2026/02/13-21:04:41.354 610 Manual compaction at level-0 from '\x00\x8c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x8d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x8c\x00\x00\x05' @ 5777 : 1
+2026/02/13-21:04:41.355 610 Compacting 1@0 + 1@1 files
+2026/02/13-21:04:41.362 610 Generated table #436@0: 174 keys, 4732 bytes
+2026/02/13-21:04:41.362 610 Compacted 1@0 + 1@1 files => 4732 bytes
+2026/02/13-21:04:41.364 610 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/13-21:04:41.367 610 Delete type=2 #435
+2026/02/13-21:04:41.369 610 Manual compaction at level-0 from '\x00\x8c\x00\x00\x05' @ 5777 : 1 .. '\x00\x8d\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/02/13-21:04:42.906 2058 Level-0 table #438: started
+2026/02/13-21:04:42.913 2058 Level-0 table #438: 1581 bytes OK
+2026/02/13-21:04:42.917 2058 Delete type=2 #432
+2026/02/13-21:04:42.918 2058 Delete type=0 #434
+2026/02/13-21:04:42.921 2d94 Manual compaction at level-0 from '\x00\x8d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x8e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x8e\x00\x00\x05' @ 5806 : 1
+2026/02/13-21:04:42.921 2d94 Compacting 1@0 + 1@1 files
+2026/02/13-21:04:42.940 2d94 Generated table #439@0: 178 keys, 4698 bytes
+2026/02/13-21:04:42.940 2d94 Compacted 1@0 + 1@1 files => 4698 bytes
+2026/02/13-21:04:42.954 2d94 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/13-21:04:42.956 2d94 Delete type=2 #438
+2026/02/13-21:04:42.958 18e0 Manual compaction at level-0 from '\x00\x8e\x00\x00\x05' @ 5806 : 1 .. '\x00\x8e\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/02/13-21:04:43.086 610 Level-0 table #441: started
+2026/02/13-21:04:43.105 610 Level-0 table #441: 490 bytes OK
+2026/02/13-21:04:43.127 610 Delete type=2 #436
+2026/02/13-21:04:43.127 610 Delete type=0 #437
+2026/02/13-21:04:43.128 18e0 Manual compaction at level-0 from '\x00\x8e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x8f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x8e\x00\x00\x05' @ 5839 : 0
+2026/02/13-21:04:43.128 18e0 Compacting 1@0 + 1@1 files
+2026/02/13-21:04:43.138 18e0 Generated table #442@0: 176 keys, 4764 bytes
+2026/02/13-21:04:43.139 18e0 Compacted 1@0 + 1@1 files => 4764 bytes
+2026/02/13-21:04:43.150 18e0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/13-21:04:43.152 18e0 Delete type=2 #441
+2026/02/13-21:04:43.153 18e0 Manual compaction at level-0 from '\x00\x8e\x00\x00\x05' @ 5839 : 0 .. '\x00\x8f\x00\x00\x00' @ 0 : 0; will stop at (end)

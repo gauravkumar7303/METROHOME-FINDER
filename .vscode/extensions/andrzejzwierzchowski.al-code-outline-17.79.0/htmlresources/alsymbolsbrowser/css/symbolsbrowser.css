@@ -1,0 +1,64 @@
+#search {
+    padding-left: 5px;
+}
+#searchtypeWrapper {
+    margin: 0;
+    padding: 0;
+    width: 155px; 
+}
+#searchtype {
+    flex: 1 1 25%;
+}
+#searchid {
+    flex: 1 1 25%;
+}
+#searchname {
+    flex: 1 1 50%;
+}
+#objects {
+    flex: 1 1 100px;
+}
+#symbols {
+    flex: 1 1 100px;
+}
+.gutter {
+    float: left;
+    background-color: var(--vscode-panel-border);
+    cursor: ew-resize;
+    margin: 0;
+}
+.contentcol {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.contcolhdr {
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-color: var(--vscode-editorWidget-background);
+    color: var(--vscode-sideBarSectionHeader-foreground);
+    padding: 2px 5px;
+}
+.contcolname {
+    flex: 1 1 auto;
+    overflow: hidden;
+    font-size: var(--font-size);
+    font-weight: bold;    
+    font-family: var(--font-family);    
+}
+.contcoltb {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.symbolscont {
+    border: 1px solid var(--vscode-panel-border);
+}

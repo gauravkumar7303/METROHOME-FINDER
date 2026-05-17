@@ -1,0 +1,20 @@
+2025/03/08-16:05:15.365 1460 Creating DB C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\IndexedDB\https_payserviceinn.com_0.indexeddb.leveldb since it was missing.
+2025/03/08-16:05:15.370 1460 Reusing MANIFEST C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\IndexedDB\https_payserviceinn.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/08-16:05:15.380 2d24 Level-0 table #5: started
+2025/03/08-16:05:15.383 2d24 Level-0 table #5: 755 bytes OK
+2025/03/08-16:05:15.386 2d24 Delete type=0 #3
+2025/03/08-16:05:15.386 af8 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/08-16:05:19.714 af8 Level-0 table #7: started
+2025/03/08-16:05:19.719 af8 Level-0 table #7: 2183 bytes OK
+2025/03/08-16:05:19.723 af8 Delete type=0 #4
+2025/03/08-16:05:19.725 af8 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/08-16:05:24.801 1460 Level-0 table #9: started
+2025/03/08-16:05:24.804 1460 Level-0 table #9: 504 bytes OK
+2025/03/08-16:05:24.809 1460 Delete type=0 #6
+2025/03/08-16:05:24.809 1460 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 122 : 0
+2025/03/08-16:05:24.809 1460 Compacting 1@0 + 1@1 files
+2025/03/08-16:05:24.812 1460 Generated table #10@0: 47 keys, 1655 bytes
+2025/03/08-16:05:24.812 1460 Compacted 1@0 + 1@1 files => 1655 bytes
+2025/03/08-16:05:24.814 1460 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/08-16:05:24.815 1460 Delete type=2 #9
+2025/03/08-16:05:24.815 1460 Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 122 : 0 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,15 @@
+2026/02/13-21:04:36.110 4638 Reusing MANIFEST C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/13-21:04:36.179 4638 Recovering log #55
+2026/02/13-21:04:36.193 4638 Reusing old log C:\Users\gaurav kumar\.TurboVPN\EBWebView\Default\Local Storage\leveldb/000055.log 
+2026/02/14-00:29:28.209 4638 Level-0 table #59: started
+2026/02/14-00:29:28.231 4638 Level-0 table #59: 10645 bytes OK
+2026/02/14-00:29:28.241 4638 Delete type=0 #55
+2026/02/14-00:29:28.244 4638 Compacting 4@0 + 1@1 files
+2026/02/14-00:29:28.258 4638 Generated table #60@0: 230 keys, 12887 bytes
+2026/02/14-00:29:28.258 4638 Compacted 4@0 + 1@1 files => 12887 bytes
+2026/02/14-00:29:28.259 4638 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/14-00:29:28.262 4638 Delete type=2 #47
+2026/02/14-00:29:28.263 4638 Delete type=2 #50
+2026/02/14-00:29:28.263 4638 Delete type=2 #53
+2026/02/14-00:29:28.263 4638 Delete type=2 #56
+2026/02/14-00:29:28.263 4638 Delete type=2 #59

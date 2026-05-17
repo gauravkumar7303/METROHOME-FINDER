@@ -1,0 +1,14 @@
+{
+  "socketPath": "\\\\.\\pipe\\mcp-7c695936-b0cf-4c23-a044-faafeeee8cd6.sock",
+  "scheme": "pipe",
+  "headers": {
+    "Authorization": "Nonce 8758b9a6-59f6-4548-9963-27b79507f6c8"
+  },
+  "pid": 6020,
+  "ideName": "Visual Studio Code",
+  "timestamp": 1778997448460,
+  "workspaceFolders": [
+    "c:\\Users\\gaurav kumar\\OneDrive\\Desktop\\College project\\Metrohome 05-03-2026"
+  ],
+  "isTrusted": true
+}

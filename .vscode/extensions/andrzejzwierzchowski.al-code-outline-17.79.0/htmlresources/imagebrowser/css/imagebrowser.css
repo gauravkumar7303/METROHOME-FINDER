@@ -1,0 +1,54 @@
+#searchname {
+    flex: 1 1 auto;
+}
+#content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    align-content: flex-start;
+    border: 1px solid var(--vscode-panel-border);   
+    overflow: auto;
+}
+.image {
+    flex: 0 0 120px;    
+    margin: 2px;
+    padding: 4px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--vscode-panel-border);
+}
+.imageaction {
+    height: 60px;
+}
+.imagercaction {
+    height: 50px;
+}
+.imagecgfld {
+    height: 80px;   
+}
+.imagecgaction {
+    height: 100px;
+}
+.image .img {    
+    flex: 0 0 auto;
+    margin: 0;
+}
+.image .name {
+    flex: 1 1 auto;
+    overflow: hidden;
+    margin: 6px 0px 0px 0px;
+}
+.imagesel {
+    background-color: var(--vscode-list-inactiveSelectionBackground);
+    color: var(--vscode-list-inactiveSelectionForeground);
+}
+#content:focus .imagesel {
+    background-color: var(--vscode-list-activeSelectionBackground) !important;
+    color: var(--vscode-list-activeSelectionForeground) !important;
+}

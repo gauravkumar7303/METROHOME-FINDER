@@ -1,0 +1,50 @@
+{
+	"name": "rdlc-validator",
+	"displayName": "RDLC Validator",
+	"description": "Validates RDLC files",
+	"version": "0.1.0",
+	"publisher": "dynapro",
+	"repository": "https://dynapro.visualstudio.com/Team%20Dynapro/_git/vscext",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:rdlc-validator.validate-rdlc"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "rdlc-validator.validate-rdlc",
+				"title": "Validate RDLC"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.54.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"xmldom": "^0.5.0"
+	},
+	"__metadata": {
+		"installedTimestamp": 1750126586462,
+		"targetPlatform": "undefined",
+		"size": 94571
+	}
+}

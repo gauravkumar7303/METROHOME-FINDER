@@ -1,0 +1,14 @@
+{
+  "socketPath": "\\\\.\\pipe\\mcp-9885c4c1-6295-4243-8c3d-1d62cee9b01d.sock",
+  "scheme": "pipe",
+  "headers": {
+    "Authorization": "Nonce 2ce2516a-1e53-4e52-a40c-602fe37d15ae"
+  },
+  "pid": 14560,
+  "ideName": "Visual Studio Code",
+  "timestamp": 1778996558360,
+  "workspaceFolders": [
+    "c:\\Users\\gaurav kumar\\OneDrive\\Desktop\\College project\\RideEase 05-03-2026\\rideease"
+  ],
+  "isTrusted": true
+}

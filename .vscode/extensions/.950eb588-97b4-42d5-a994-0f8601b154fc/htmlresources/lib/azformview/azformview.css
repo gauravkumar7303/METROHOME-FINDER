@@ -1,0 +1,67 @@
+.formlinecenter {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.formcaptionct {
+    padding: 0 5px;
+}
+.formfieldct {
+    padding: 0 5px;
+}
+.formline {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+.formheader {
+    flex: 1 1 auto;   
+}
+.formcaption {
+    flex: 0 0 200px;
+    align-self: flex-start;
+}
+.formfield {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.azgridviewcont {
+    flex: 1 1 auto;    
+}
+
+.formfield .fulltext, .formfield .fullopt {
+    flex: 1 1 auto;
+}
+.formfield .fixedtext, .formfield .fixedopt {
+    flex: 0 1 200px;
+}
+.formfield .checkbox {
+    flex: none;
+}
+.formfield input {
+    padding: 2px;
+}
+
+.formcaption .tooltiptext {
+    visibility: hidden;
+    max-width: 300px;
+    background-color: var(--vscode-editorHoverWidget-background);
+    color: var(--vscode-editorHoverWidget-foreground);
+    border: 1px solid var(--vscode-editorHoverWidget-border);
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .formcaption:hover .tooltiptext {
+    visibility: visible;
+  }
+

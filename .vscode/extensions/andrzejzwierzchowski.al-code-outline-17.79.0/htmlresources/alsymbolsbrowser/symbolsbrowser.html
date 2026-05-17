@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ##CSPSOURCE## https: data:; script-src ##CSPSOURCE## 'unsafe-eval'; style-src ##CSPSOURCE##; font-src ##CSPSOURCE##;" />
+        <script src="##EXTENSIONPATH##/htmlresources/lib/jquery/jquery.min.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/jquery-ui-position/jquery.ui.position.min.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/jquery-context-menu/js/jquery.contextMenu.min.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/jquery-multiselect/jquery.multiselect.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/split/split.min.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/filtercompiler/filterCompiler.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/lib/symbolstreecontrol/symbolstreecontrol.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/alsymbolsbrowser/js/alsymbolkind.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/alsymbolsbrowser/js/symbolsbrowser.js"></script>
+        <script src="##EXTENSIONPATH##/htmlresources/alsymbolsbrowser/js/startup.js"></script>
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/lib/jquery-context-menu/css/jquery.contextMenu.css">
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/lib/jquery-multiselect/jquery.multiselect.css">
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/lib/styles/default.css">
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/lib/styles/icons.css">
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/lib/symbolstreecontrol/symbolstreecontrol.css">
+        <link rel="stylesheet" type="text/css" href="##EXTENSIONPATH##/htmlresources/alsymbolsbrowser/css/symbolsbrowser.css">
+    </head>
+    <body>
+        <div id="search" class="search">
+            <div id="searchtypeWrapper">
+                <select id="searchtype" name="searchtype" class="searchinput" tabindex="1" multiple="multiple">
+                    <option value="Table">Tables</option>
+                    <option value="Page">Pages</option>
+                    <option value="Report">Reports</option>
+                    <option value="XmlPort">Xml Ports</option>
+                    <option value="Query">Queries</option>
+                    <option value="Codeunit">Codeunits</option>
+                    <option value="ControlAddIn">Control Add-Ins</option>
+                    <option value="PageExtension">Page Extensions</option>
+                    <option value="TableExtension">Table Extensions</option>
+                    <option value="Profile">Profiles</option>
+                    <option value="PageCustomization">Page Customizations</option>
+                    <option value="Enum">Enums</option>
+                    <option value="DotNetPackage">DotNet Packages</option>
+                    <option value="Interface">Interfaces</option>
+                </select>            
+            </div>
+            <input type="text" id="searchid" name="searchid" tabindex="2" class="searchinput" placeholder="Id filter, e.g., 22, 10..50, &gt;20&amp;&lt;30">
+            <input type="text" id="searchname" name="searchname" tabindex="3" class="searchinput" placeholder="Name filter, e.g., *Item*, *Customer*">
+            <button class="btn" id="searchbtn" tabindex="3">Search</button>
+            <button class="btn" id="listbtn" tabindex="3">List View</button>
+        </div>
+        <div id="content" class="content">
+            <div id="olpanel" class="contentcol">
+                <div class="contcolhdr">
+                    <div class="contcolname">Objects</div>
+                    <div class="contcoltb">
+                        <button id="objidsbtn" class="tbarbtn" tabindex="3">Hide Ids</button>
+                    </div>
+                </div>
+                <div id="objects" class="symbolscont" tabindex="4">Loading symbols, please wait...</div>
+            </div>
+            <div id="odpanel" class="contentcol">
+                <div class="contcolhdr">
+                    <div class="contcolname">Selected Object</div>
+                    <div class="contcoltb">
+                        <button id="symidsbtn" class="tbarbtn" tabindex="5">Hide Ids</button>
+                    </div>
+                </div>
+                <div class="treefiltercont">
+                    <input tabindex="1" id="selobjfilter" class="treefiltertext" type="text" placeholder="Filter, e.g., *Address*, Entry*">
+                    <button tabindex="2" id="selobjfilterbtn" class="treefilterbtn">Filter</button>
+        
+                </div>
+                <div id="symbols" class="symbolscont" tabindex="6"></div>
+            </div>
+        </div>
+    </body>
+</html>
