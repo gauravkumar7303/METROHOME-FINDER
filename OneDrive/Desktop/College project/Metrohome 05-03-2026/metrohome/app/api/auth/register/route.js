@@ -1,8 +1,6 @@
 // Path: app/api/auth/register/route.js
 import { NextResponse } from 'next/server';
-import { connectDB } from '@/src/lib/db';
-import User from '@/src/lib/User.model';
-import jwt from 'jsonwebtoken';
+import { AuthService } from '@/src/services/auth.service';
 
 export async function POST(request) {
   console.log('🚀 [API] /api/auth/register called');
@@ -11,10 +9,17 @@ export async function POST(request) {
     const body = await request.json();
     const { name, email, password } = body;
 
-    // Validation
     if (!name || !email || !password) {
       return NextResponse.json(
         { success: false, error: 'Name, email and password are required' },
+        { status: 400 }
+      );
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { success: false, error: 'Please enter a valid email address' },
         { status: 400 }
       );
     }
@@ -26,50 +31,15 @@ export async function POST(request) {
       );
     }
 
-    // Connect DB
-    await connectDB();
+    const result = await AuthService.registerUser({ name: name.trim(), email: email.trim().toLowerCase(), password });
 
-    // Check if user already exists
-    const existingUser = await User.findOne({ email: email.toLowerCase() });
-    if (existingUser) {
-      return NextResponse.json(
-        { success: false, error: 'Email already registered. Please login.' },
-        { status: 409 }
-      );
-    }
-
-    // Create user
-    const user = await User.create({
-      name: name.trim(),
-      email: email.toLowerCase().trim(),
-      password,
-    });
-
-    // Generate JWT token
-    const token = jwt.sign(
-      { userId: user._id, email: user.email, role: user.role },
-      process.env.JWT_SECRET,
-      { expiresIn: '7d' }
-    );
-
-    console.log('✅ Registration successful for:', email);
-
-    return NextResponse.json({
-      success: true,
-      token,
-      user: {
-        id: user._id,
-        name: user.name,
-        email: user.email,
-        role: user.role,
-      },
-    }, { status: 201 });
+    return NextResponse.json(result, { status: 201 });
 
   } catch (error) {
     console.error('💥 Register API error:', error);
     return NextResponse.json(
-      { success: false, error: 'Registration failed. Please try again.' },
-      { status: 500 }
+      { success: false, error: error.message || 'Registration failed' },
+      { status: 400 }
     );
   }
 }
